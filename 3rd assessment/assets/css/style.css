@@ -1,0 +1,435 @@
+/*fonts link*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*fonts link*/
+/*fonts family
+font-family: 'Jost', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+}
+
+/* navbar start */
+.navbar {
+    background-color: var(--bg-color);
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    align-items: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+.navbar .navbar-brand {
+    color: #8e43e7;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: .5s linear;
+    position: relative;
+}
+.moon{
+    font-size: 22px;
+}
+.navbar .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    border: 3px solid transparent;
+    width: 0%;
+    transition: .5s linear;
+}
+.navbar .navbar-nav .nav-link:hover::before {
+    border: 1px solid #8e43e7;
+    left: 0%;
+    width: 50%;
+}
+.navbar .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+    border: 1px solid transparent;
+    width: 0%;
+    transition: .3s linear;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+    border: 1px solid #8e43e7;
+    right: 0%;
+    width: 50%;
+}
+.navbar .navbar-nav .nav-link .navbar .navbar-nav .nav-link.active {
+    color: #8e43e7;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #8e43e7;
+}
+.navbar .navbar-nav .dropdown-item {
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+}
+/* navbar end */
+
+/* banner section start */
+.p-banner{
+    background-color: #ced6e0;
+}
+.p-banner .title-small{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #8c89a2;
+    font-family: 'Jost', sans-serif;
+}
+.p-banner h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.p-banner h1 span{
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 58px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.p-banner p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+}
+.btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 25px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #7a21e3;
+    border-color: #731cdb;
+}
+/* banner section end */
+
+/* About Section Start */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.radius-image{
+    border-radius: 20px;
+}
+.about-sec h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #8c89a2;
+    font-family: 'Jost', sans-serif;
+}
+.about-sec h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.about-sec p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+}
+.btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 20px;
+}
+/* About Section Start */
+
+/* resume section start */
+.abir-resume{
+    background-color: #ced6e0;
+}
+.abir-resume h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #8c89a2;
+    font-family: 'Jost', sans-serif;
+}
+.abir-resume h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.abir-resume p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+}
+/* resume section end */
+
+/* Services section start */
+.abir-services .card-body{
+    box-shadow: 5px 5px 5px #731cdb;
+}
+.abir-services h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #8c89a2;
+    font-family: 'Jost', sans-serif;
+}
+.abir-services h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.abir-services h4{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #8e43e7;
+    font-family: 'Jost', sans-serif;
+}
+.abir-services p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+}
+.abir-services a{
+    font-size: 17px;
+    padding: 0;
+    text-decoration: none;
+    color: #7a21e3;
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+/* Services section end */
+
+/* stats */
+.abir-stats{
+    background-color: #ced6e0;
+}
+.abir-stats span{
+    font-size: 40px;
+    color: #8e43e7;
+}
+.abir-stats {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.abir-stats h4{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+}
+/* stats */
+
+/* testimonials */
+.abir-clients h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #8c89a2;
+    font-family: 'Jost', sans-serif;
+}
+.abir-clients h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.abir-testimonials{
+    max-width: 1000px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    background: #ced6e0;
+    padding: 10px;
+    margin: 50px 15px;
+}
+.profile{
+    margin-bottom: 30px;
+    text-align: center;    
+}
+.img-area {
+	margin: 0 15px 15px 15px;
+}
+.img-area img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 7px solid #731cdb;
+}
+.content{
+    font-size: 18px;
+}
+.content p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+	text-align: justify;
+}
+.content p span {
+	font-size: 48px;
+	margin-right: 20px;
+    color: #731cdb;
+}
+.bioh h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.bio h4 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: blueviolet;
+}
+/* testimonials */
+
+/* video popup section */
+.abir-index5{
+    background-color: #ced6e0;
+}
+.abir-index5 h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.abir-index5 p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+    font-family: 'Jost', sans-serif;
+}
+.abir-index5 iframe{
+    width: 800px;
+    height: 500px;
+}
+/* video popup section */
+
+/* hire me */
+.abir-grid-quote h6{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #8c89a2;
+    font-family: 'Jost', sans-serif;
+}
+.abir-grid-quote h3{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #3f3a64;
+    font-family: 'Jost', sans-serif;
+}
+.abir-grid-quote .btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 20px;
+}
+.abir-grid-quote .btn-primary:hover {
+    color: #fff;
+    background-color: #7a21e3;
+    border-color: #731cdb;
+}
+.abir-grid-quote .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #8e43e7;
+    border-color: #8e43e7;
+}
+/* hire me */
+
+/* footer */
+footer{
+    background:#ced6e0;
+}
+.footer-icon{
+    padding: 80px 0px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+a:link{
+    text-decoration: none;
+}
+a:link i{
+    font-size: 30px;
+}
+a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+a:active{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-text{
+    text-align: center;
+    padding: 5px 0;
+}
+/* footer */
